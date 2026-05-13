@@ -23,7 +23,9 @@
   justify-content: center;
   transition: all 0.2s;
 }
-.ych-close:hover { background: #e5e7eb; }
+.ych-close:hover {
+  background: #e5e7eb;
+}
 
 .ych-title {
   font-family: var(--font-display);
@@ -62,21 +64,23 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(6px);
   color: white;
   font-size: 11px;
   padding: 4px 10px;
   border-radius: 50px;
 }
-.ych-vibe::before { content: '⚡ '; }
+.ych-vibe::before {
+  content: "⚡ ";
+}
 
 .ych-info {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
   padding: 32px 16px 16px;
   color: white;
 }
@@ -95,7 +99,7 @@
 
 .ych-mutual {
   font-size: 12px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin: 4px 0 8px;
 }
 
@@ -106,8 +110,8 @@
 }
 
 .ych-tags .tag {
-  background: rgba(255,255,255,0.15);
-  border-color: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -125,4 +129,15 @@
   margin-top: 12px;
   cursor: pointer;
 }
-.ych-drink:hover { color: var(--pink); }
+.ych-drink:hover {
+  color: var(--pink);
+}
+
+@media (max-width: 768px) {
+  .ych-modal {
+    padding: 20px 16px;
+  }
+  .ych-card .ych-img {
+    height: 240px;
+  }
+}

@@ -16,7 +16,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
   color: var(--text-secondary);
   font-size: 13px;
   display: flex;
@@ -24,7 +24,9 @@
   justify-content: center;
   transition: all 0.2s;
 }
-.verif-close:hover { background: rgba(0,0,0,0.2); }
+.verif-close:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
 
 .verif-icon-wrap {
   display: flex;
@@ -104,8 +106,13 @@
   box-shadow: var(--shadow-lg);
 }
 
-.face-close { color: white; background: rgba(255,255,255,0.15); }
-.face-close:hover { background: rgba(255,255,255,0.25); }
+.face-close {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+.face-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
 
 .face-scan-wrap {
   position: relative;
@@ -131,9 +138,9 @@
 .face-oval {
   width: 160px;
   height: 200px;
-  border: 2px solid rgba(255,255,255,0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
-  box-shadow: 0 0 0 9999px rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.4);
 }
 
 .face-line {
@@ -144,22 +151,26 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.top-line { top: 60px; }
-.bottom-line { bottom: 60px; }
+.top-line {
+  top: 60px;
+}
+.bottom-line {
+  bottom: 60px;
+}
 
 .look-straight-badge {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
   color: white;
   font-size: 13px;
   font-weight: 600;
   padding: 6px 16px;
   border-radius: 50px;
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .face-bottom {
@@ -177,7 +188,7 @@
 
 .face-sub {
   font-size: 12px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 10px;
 }
 
@@ -185,13 +196,15 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 11px;
   padding: 4px 12px;
   border-radius: 50px;
 }
-.face-privacy svg { stroke: rgba(255,255,255,0.7); }
+.face-privacy svg {
+  stroke: rgba(255, 255, 255, 0.7);
+}
 
 .face-controls {
   display: flex;
@@ -206,23 +219,27 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   transition: all 0.2s;
 }
-.face-ctrl-btn svg { stroke: white; }
-.face-ctrl-btn:hover { background: rgba(255,255,255,0.2); }
+.face-ctrl-btn svg {
+  stroke: white;
+}
+.face-ctrl-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 .face-capture-btn {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   background: white;
-  border: 3px solid rgba(255,255,255,0.3);
-  box-shadow: 0 0 0 4px rgba(255,255,255,0.15);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
   transition: all 0.2s;
 }
 .face-capture-btn:hover {
@@ -249,7 +266,11 @@
   font-weight: 800;
   margin-bottom: 4px;
 }
-.vibe-sub { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; }
+.vibe-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
 
 .vibe-progress-row {
   display: flex;
@@ -257,9 +278,26 @@
   gap: 10px;
   margin-bottom: 12px;
 }
-.vibe-count { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 0.5px; flex-shrink: 0; }
-.vibe-bar { flex: 1; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden; }
-.vibe-bar-fill { height: 100%; background: var(--pink-grad); border-radius: 3px; transition: width 0.3s; }
+.vibe-count {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+.vibe-bar {
+  flex: 1;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.vibe-bar-fill {
+  height: 100%;
+  background: var(--pink-grad);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
 
 .vibe-tip {
   display: flex;
@@ -292,9 +330,19 @@
   transition: all 0.2s;
   background: #f9fafb;
 }
-.vibe-add-slot:hover { border-color: var(--pink); background: #fdf2f8; }
-.vibe-add-icon { font-size: 24px; color: #9ca3af; }
-.vibe-add-label { font-size: 11px; color: var(--text-muted); font-weight: 500; }
+.vibe-add-slot:hover {
+  border-color: var(--pink);
+  background: #fdf2f8;
+}
+.vibe-add-icon {
+  font-size: 24px;
+  color: #9ca3af;
+}
+.vibe-add-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
 
 .vibe-photo-slot {
   aspect-ratio: 1;
@@ -316,14 +364,16 @@
   left: 6px;
   width: 24px;
   height: 24px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
 }
-.vibe-remove:hover { background: rgba(233,30,140,0.8); }
+.vibe-remove:hover {
+  background: rgba(233, 30, 140, 0.8);
+}
 
 .vibe-hint-slot {
   width: 100%;
@@ -334,8 +384,44 @@
   justify-content: center;
   gap: 2px;
 }
-.vibe-hint-icon { font-size: 24px; }
-.vibe-hint-text { font-size: 10px; font-weight: 700; color: var(--text-secondary); letter-spacing: 0.5px; }
-.vibe-hint-sub { font-size: 10px; color: var(--text-muted); }
+.vibe-hint-icon {
+  font-size: 24px;
+}
+.vibe-hint-text {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+.vibe-hint-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+}
 
-.vibe-done-btn { width: 100%; text-align: center; padding: 14px; font-size: 15px; }
+.vibe-done-btn {
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .verif-modal {
+    padding: 24px 16px;
+  }
+  .verif-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .face-modal {
+    width: 95vw;
+  }
+  .vibe-modal {
+    padding: 20px 16px;
+    width: 95vw;
+  }
+  .vibe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

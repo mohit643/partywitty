@@ -17,17 +17,14 @@
 .sidebar-closed {
   width: 60px;
 }
-
 .sidebar-closed .sidebar-logo {
   justify-content: center;
   padding: 18px 10px;
 }
-
 .sidebar-closed .nav-item {
   justify-content: center;
   padding: 10px;
 }
-
 .sidebar-closed .nav-icon svg {
   width: 22px;
   height: 22px;
@@ -93,12 +90,10 @@
   background: #fdf2f8;
   color: var(--pink);
 }
-
 .nav-item.active {
   background: linear-gradient(135deg, #fdf2f8, #fce7f3);
   color: var(--pink);
 }
-
 .nav-item.active .nav-icon svg {
   stroke: var(--pink);
 }
@@ -167,12 +162,10 @@
   font-weight: 600;
   color: var(--text-primary);
 }
-
 .notif-sub {
   font-size: 9px;
   color: var(--text-muted);
 }
-
 .promo .notif-title {
   color: var(--pink);
 }
@@ -187,4 +180,87 @@
   border-radius: 8px;
   text-align: center;
   font-family: var(--font-display);
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+/* Mobile — sidebar becomes bottom nav */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100% !important;
+    min-height: auto;
+    height: 60px;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 4px;
+    border-radius: 0;
+    flex: 1;
+    justify-content: center;
+    font-size: 9px;
+  }
+
+  .nav-label {
+    font-size: 9px;
+  }
+
+  .nav-item.active {
+    background: none;
+    color: var(--pink);
+    border-top: 2px solid var(--pink);
+  }
+
+  .main-content {
+    padding-bottom: 60px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar .logo-text {
+    display: none;
+  }
+  .sidebar .nav-label {
+    display: none;
+  }
+  .sidebar .sidebar-bottom {
+    display: none;
+  }
+  .sidebar .nav-item {
+    justify-content: center;
+    padding: 10px;
+  }
 }

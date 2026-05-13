@@ -29,7 +29,9 @@
   font-weight: 500;
   color: var(--text-secondary);
 }
-.os-back:hover { color: var(--pink); }
+.os-back:hover {
+  color: var(--pink);
+}
 
 .os-logo {
   display: flex;
@@ -78,7 +80,9 @@
   color: var(--pink);
   cursor: pointer;
 }
-.os-review:hover { text-decoration: underline; }
+.os-review:hover {
+  text-decoration: underline;
+}
 
 .os-profile-row {
   display: flex;
@@ -121,8 +125,16 @@
   text-align: center;
   min-width: 52px;
 }
-.os-month { font-size: 10px; font-weight: 700; letter-spacing: 1px; }
-.os-day-num { font-size: 24px; font-weight: 800; font-family: var(--font-display); }
+.os-month {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.os-day-num {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: var(--font-display);
+}
 
 .os-divider {
   height: 1px;
@@ -136,8 +148,14 @@
   align-items: center;
   margin-bottom: 12px;
 }
-.os-price-label { font-size: 14px; color: var(--text-secondary); }
-.os-price-val { font-size: 14px; font-weight: 600; }
+.os-price-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.os-price-val {
+  font-size: 14px;
+  font-weight: 600;
+}
 
 .os-drink-row {
   display: flex;
@@ -153,9 +171,18 @@
   flex-shrink: 0;
 }
 
-.os-drink-info { flex: 1; }
-.os-drink-info h4 { font-size: 14px; font-weight: 600; }
-.os-drink-info p { font-size: 12px; color: var(--text-muted); margin: 2px 0; }
+.os-drink-info {
+  flex: 1;
+}
+.os-drink-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.os-drink-info p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 2px 0;
+}
 
 .os-drink-note {
   display: inline-block;
@@ -247,7 +274,10 @@
   box-shadow: var(--shadow);
   transition: all 0.2s;
 }
-.os-icon-btn:hover { border-color: var(--pink); color: var(--pink); }
+.os-icon-btn:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
 
 .os-cta {
   flex: 1;
@@ -261,4 +291,35 @@
   cursor: not-allowed;
   transform: none !important;
   box-shadow: none !important;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .order-summary-wrap {
+    padding: 16px 12px;
+    align-items: flex-start;
+  }
+  .os-container {
+    width: 100%;
+  }
+  .os-card {
+    padding: 16px;
+  }
+  .os-venue-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .os-date {
+    align-self: flex-start;
+  }
+  .os-actions {
+    flex-wrap: wrap;
+  }
+  .os-cta {
+    max-width: 100%;
+    width: 100%;
+  }
 }

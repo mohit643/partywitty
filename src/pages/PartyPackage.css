@@ -4,16 +4,26 @@
   overflow-y: auto;
 }
 
-.pp-header { margin-bottom: 20px; }
+.pp-header {
+  margin-bottom: 20px;
+}
 
 .breadcrumb {
   font-size: 12px;
   color: var(--text-muted);
   margin-bottom: 14px;
 }
-.breadcrumb span { margin: 0 2px; }
-.bc-active { color: var(--text-primary); font-weight: 500; }
-.breadcrumb span:not(.bc-active):hover { color: var(--pink); cursor: pointer; }
+.breadcrumb span {
+  margin: 0 2px;
+}
+.bc-active {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.breadcrumb span:not(.bc-active):hover {
+  color: var(--pink);
+  cursor: pointer;
+}
 
 .pp-user-row {
   display: flex;
@@ -44,7 +54,10 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.pp-profile-chip span { font-size: 13px; font-weight: 500; }
+.pp-profile-chip span {
+  font-size: 13px;
+  font-weight: 500;
+}
 
 .verified-sm {
   width: 16px;
@@ -116,7 +129,10 @@
   width: 120px;
 }
 
-.pp-mic { background: none; font-size: 14px; }
+.pp-mic {
+  background: none;
+  font-size: 14px;
+}
 
 .venues-grid {
   display: grid;
@@ -166,7 +182,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(124,58,237,0.85);
+  background: rgba(124, 58, 237, 0.85);
   color: white;
   font-size: 9px;
   font-weight: 600;
@@ -179,7 +195,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   padding: 24px 12px 12px;
   color: white;
 }
@@ -188,7 +204,7 @@
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
 }
 
@@ -205,10 +221,12 @@
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.venue-bottom { padding: 10px 12px; }
+.venue-bottom {
+  padding: 10px 12px;
+}
 
 .zoey-tag {
   display: inline-flex;
@@ -238,7 +256,9 @@
   color: var(--text-secondary);
 }
 
-.venue-dist { color: var(--text-muted); }
+.venue-dist {
+  color: var(--text-muted);
+}
 
 .venue-expand {
   background: none;
@@ -283,4 +303,41 @@
   font-size: 11px;
   color: var(--text-secondary);
   font-weight: 500;
+}
+
+/* ===================== */
+/* RESPONSIVE            */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .party-package {
+    padding: 16px 12px;
+  }
+  .pp-user-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pp-verify-chip {
+    align-self: flex-end;
+  }
+  .pp-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pp-search {
+    width: 100%;
+  }
+  .pp-search-input {
+    width: 100%;
+  }
+  .venues-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .venues-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
