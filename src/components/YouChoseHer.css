@@ -1,0 +1,128 @@
+.ych-modal {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  width: 380px;
+  max-width: 95vw;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.ych-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: var(--text-secondary);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.ych-close:hover { background: #e5e7eb; }
+
+.ych-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.ych-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.ych-special {
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.ych-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.ych-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.ych-vibe {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+.ych-vibe::before { content: '⚡ '; }
+
+.ych-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  padding: 32px 16px 16px;
+  color: white;
+}
+
+.ych-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ych-name-row h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.ych-mutual {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin: 4px 0 8px;
+}
+
+.ych-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ych-tags .tag {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.ych-cta {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.ych-drink {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  cursor: pointer;
+}
+.ych-drink:hover { color: var(--pink); }
